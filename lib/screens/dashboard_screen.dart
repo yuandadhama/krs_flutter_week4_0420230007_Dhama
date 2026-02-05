@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_krs_application/screens/krs_screen.dart';
+import 'package:flutter_krs_application/screens/profile_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override
@@ -8,11 +9,11 @@ class DashboardScreen extends StatelessWidget {
       appBar: AppBar(title: Text("Dashboard")),
       body: Center(
         child: ElevatedButton(
-          child: Text("Open KRS"),
+          child: Text("Profile"),
           onPressed: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => KrsScreen()),
+              MaterialPageRoute(builder: (_) => ProfileScreen()),
             ),
           },
         ),
