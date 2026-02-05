@@ -33,3 +33,19 @@ Why you arranged them that way
 How this screen could evolve in a real KRS system
 
 - This screen could evolve as much as the data that must be shown in the screen from the real database, such as GPA, email, ID number, KRS history, etc. From there the arrangement of the UI will definitely evolve too, adapting the data that should be appeared.
+
+## Reflection
+
+1.  Hardest part this week
+    Probably I was confused in managing layout of the card profile like how to make it look neat, include centering it, grouping with the column or row, some spacing, and then how to align text so that it aligns to right.
+
+2.  Error encountered
+    I actually encountered error when I run the flutter project sometimes. The error usually was unclear, it just happen like that even though there is no error or mistake in the code I wrote.
+
+3.  How I fixed them
+    For the case I fixed the layouting, I tried to learn what are the correct widget to do a certain layout arrangement. For example, I learnt that MainAxisAlignment and crossAxisALignment properties are really useful in case of placing widgets properly. I also used SizedBox for spacing and adjusted padding and alignment so the profile card looks neat and centered on the screen.
+
+    For the errors I encounterd, I just usually fixed them by doing a hot restart while checking the terminal logs, and sometimes rebuilding the project when Flutter behaved unexpectedly even though the code had no obvious mistakes.
+
+4.  Remaining questions
+    I still have some questions about how to make the UI more responsive on different screen sizes, how to manage user data dynamically instead of hardcoding it, and how to connect this profile screen to a real backend or database in a KRS system.
