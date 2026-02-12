@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_krs_application/screens/krs_screen.dart';
 import 'package:flutter_krs_application/screens/profile_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
+  const DashboardScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
