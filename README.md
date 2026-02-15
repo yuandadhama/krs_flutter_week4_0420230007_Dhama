@@ -33,16 +33,14 @@ The error occurs because selectedCredits is an int, but "3" is a String, and Dar
 
 ## Reflection
 
-1.  Hardest part this week
-    Probably I was confused in managing layout of the card profile like how to make it look neat, include centering it, grouping with the column or row, some spacing, and then how to align text so that it aligns to right.
+1.  What confused me this week
+    The things that confused me was to understand how the StatefulWidget worked, especially why should be a createState() and why build() was not put in the main class directly.
 
-2.  Error encountered
-    I actually encountered error when I run the flutter project sometimes. The error usually was unclear, it just happen like that even though there is no error or mistake in the code I wrote.
+2.  How state changed UI behavior
+    State can change the UI, when some data changes is wrapped inside the setState(), flutter automatically update the UI. Without state, even though some data changes, the UI will remains the same.
 
-3.  How I fixed them
-    For the case I fixed the layouting, I tried to learn what are the correct widget to do a certain layout arrangement. For example, I learnt that MainAxisAlignment and crossAxisALignment properties are really useful in case of placing widgets properly. I also used SizedBox for spacing and adjusted padding and alignment so the profile card looks neat and centered on the screen.
+3.  Errors I faced and solutions
+    Error I faced, sometimes I forgot to use setState(), and incorrect StatefulWidget structure. The solution was to ensure wrapping the changes with setState(), and properly separate StatefulWidget from the State class
 
-    For the errors I encounterd, I just usually fixed them by doing a hot restart while checking the terminal logs, and sometimes rebuilding the project when Flutter behaved unexpectedly even though the code had no obvious mistakes.
-
-4.  Remaining questions
-    I still have some questions about how to make the UI more responsive on different screen sizes, how to manage user data dynamically instead of hardcoding it, and how to connect this profile screen to a real backend or database in a KRS system.
+4.  Differences between Stateful and Stateless
+    Stateless is used for immutable UI, while Stateful is used when data can change and the UI needs to change accordingly. Stateful can use setState(), while Stateless cannot.
